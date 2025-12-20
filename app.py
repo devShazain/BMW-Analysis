@@ -178,4 +178,4 @@ if fb_submit:
 
 # Footer
 st.markdown("---")
-st.caption("Deployment by Streamlit")
+st.caption("Deployment by Malik Shazain | Streamlit")
