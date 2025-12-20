@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+venv/
+metrics.txt
+# We want to keep the models and csvs for this assignment context, usually we ignore them but here they are needed artifacts.
