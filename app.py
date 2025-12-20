@@ -47,7 +47,7 @@ with st.sidebar:
     st.info(f"Using Algorithm: **{artifacts['model_name']}**")
     st.success("System Status: **Online**")
     st.markdown("---")
-    st.write("Developed for **Data Science Assignment 04**")
+    st.write("Developed for **BMW Price Prediction System**")
 
 st.markdown("---")
 st.header("🚘 Car Details")
@@ -150,7 +150,7 @@ if submit_btn:
 # ==========================================
 st.markdown("---")
 st.header("📝 Feedback Collection")
-st.caption("Help us improve the model (Assignment Task 2)")
+st.caption("Help us improve the model")
 
 with st.form("feedback_form"):
     rating = st.slider("How accurate/relevant was this prediction?", 1, 5, 3)
@@ -178,4 +178,4 @@ if fb_submit:
 
 # Footer
 st.markdown("---")
-st.caption("Deployment by Assignment 04 System | Streamlit")
+st.caption("Deployment by Streamlit")
