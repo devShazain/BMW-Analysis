@@ -160,21 +160,7 @@ with st.form("feedback_form"):
     fb_submit = st.form_submit_button("Submit Feedback")
 
 if fb_submit:
-    # Save feedback to CSV
-    feedback_file = "suggestions_dataset.csv"
-    new_feedback = pd.DataFrame({
-        'Role': [user_role],
-        'Rating': [rating],
-        'Comment': [user_comment],
-        'Date': [pd.Timestamp.now()]
-    })
-    
-    if os.path.exists(feedback_file):
-        new_feedback.to_csv(feedback_file, mode='a', header=False, index=False)
-    else:
-        new_feedback.to_csv(feedback_file, index=False)
-        
-    st.success("Thank you! Your feedback has been recorded.")
+    st.success("Thank you! Your feedback has been received. We appreciate your input! 🙏")
 
 # Footer
 st.markdown("---")
